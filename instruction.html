@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Annotation Details for Scientific Hypotheses Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container-fluid p-5 m-0">
+        <div class="row">
+            <div class="col">
+    <div class='flex-container'><h4 class='section-heading alert alert-info'><b>Overview:</b></h4><div class='section-content' style='font-size: 18px; font-weight: normal;'>During this study, you will be asked to read a scientific paper, and evaluate the hypotheses and their components automatically extracted by AI. <br><br>To evaluate whether the sentence can be classified as a hypothesis or not, consider the following definition:<em> A hypothesis is a testable explanation or prediction for an observed phenomenon that can be supported or refuted through experimentation.</em><br>
+
+    
+        <br>In the following sections, you will be presented with more detailed instructions on the task, and some examples to illustrate the methodology to be followed in the task.</div></div>
+
+    <div class='flex-container'><div class='section-title alert alert-info' style='font-size: 20px; font-weight: bold;'>Tool Instructions:</div><div class='section-content' style='font-size: 16px; font-weight: normal;'><ul>
+        <li> You can use the upvote or downvote to approve or disapprove the automatic annotations.</li>
+        <li> In this study, we are only focusing on explicit hypotheses. </li>
+        <li>Please do not delete any automatic annotations</li>
+        <li>You can add manual annotations if you don't agree with the automatic annotations.</li>
+
+    </ul></div></div>
+
+
+
+    <div class='section-title alert alert-info' style='font-size: 20px; font-weight: bold;'>Terminology</div><div class='section-content' style='font-size: 16px; font-weight: normal;'><ol style='padding-bottom: 10px;'>
+        <li><b>Label:</b> A description of the annotation.</li>
+        <li><b>Analysis Gocal Type:</b> In this study, there are two types of analysis goal for the hypotheses. </li>
+        <ul style='margin-bottom: 10px;'><li><b>Relation-finding hypotheses:</b> These hypotheses propose a <span style='background-color: #FFB6C1;'>relationship</span> between two or more <span style='background-color: #87CEFA;'>variables</span>. <br>Example: <em>We hypothesize that <span style='background-color: #87CEFA;'>increased levels of air pollution</span> are <span style='background-color: #FFB6C1;'>positively correlated</span> with the <span style='background-color: #87CEFA;'>prevalence of respiratory diseases</span> in urban areas.</em></li><li><b>Comparative hypotheses:</b> These hypotheses suggest a <span style='background-color: #FFB6C1;'>comparison</span> between two or more <span style='background-color: #FFD700;'>groups of subjects</span> in terms of a <span style='background-color: #87CEFA;'>variable</span>. <br>Example: <em>We hypothesize that <span style='background-color: #FFD700;'>students who receive personalized feedback</span> will show <span style='background-color: #FFB6C1;'>higher</span> improvement in <span style='background-color: #87CEFA;'>test scores</span> compared to those who <span style='background-color: #FFD700;'>receive generic feedback</span>.</em></li></ul>
+        <p></p>
+    <li>Components:</li> For the above two types of hypothoses, we further analyze the specific <b>relation</b> and <b>variables</b>.
+
+    <ul style='margin-bottom: 10px;'><li><b>Relation-finding hypotheses:</b>
+        <ul style='margin-bottom: 10px;'>
+            <li><b>IV:</b>Independent variable. It is the variable that is being manipulated or changed in the study.</li> 
+            <li><b>DV:</b> Dependent variable. It is the variable that is being measured or observed. </li>
+            
+            <li><b>RE:</b> Relation. The relationship between independent and dependent variables refers to the effect that the independent variable has on the dependent variable. In other words, it describes how the dependent variable changes in response to changes in the independent variable.
+            
+            In the interface, you will see from the dropdown window of RE, to choose from.</li>
+                 </ul>
+
+<p></p>
+    <li><b>Comparative hypotheses:</b> 
+        <ul style='margin-bottom: 10px;'>
+            <li><b>Var:</b> Variable. This indicates the variable that can be measured for both the groups (Left and Right).</li>
+            <li><b>OP:</b> Operator. It specifies how the variables are expected to be related to each other, using comparative words such as "greater than". In the interface, you will see 5 types of operators as below, to choose from.</li>
+    'comparesTo', 'hasSimilarValueAs', 'hasSameValueAs', 'hasDifferentValueFrom', 'hasLargerValueThan'
+   
+    <li><b>Left:</b></li> Left group. Group of samples or artifact with certain quality and differs from the group it will be compared with.
+    <li><b>Right:</b></li> Right group. Same definition as left group.
+   </ul> </ol>
+   <Strong>Note:</Strong> You will see above bold text in the interface as fields names, you can always come back to this guideline for reference.
+
+   <p></p>
+
+    <h4 class='section-title alert alert-info' style='font-size: 20px; font-weight: bold;'>Examples Hypotheses, relations, and components</h4>
+
+    Sample screenshots with reasoning on explicit/implicit hypotheses and non-hypotheses. Include context sentences. 
+    
+    <div class='hypothesis-section' style='font-size: 18px; font-weight: normal;'><div class='hypothesis-title'>Here are some examples of annotated hypotheses, relations and components for your reference:</div></div><div class='alert alert-success' style='text-align: left;'><h4>Example 1</h4></div><div class='section-content'><table style='border-collapse: collapse; width: 100%;' >
+        
+        <tr><td style='border: 1px solid black; font-size: 16px; font-weight: normal; width: auto;'>Hypothesis Text</td><td style='border: 1px solid black; font-size: 16px; font-weight: bold;'>This model is capable of producing results of a higher quality than sequence-to-sequence models even without the use of any convolution.</td></tr><tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'> Label</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>AutomaticAnnotation1</td></tr>
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Analysis Goal Type</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Comparative</td>
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Variable</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>the quality of results</td>
+        
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Operator</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>hasBetterValuethan</td>
+    <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Left Data</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>This model</td>
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Right Data</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>sequence-to-sequence models</td>
+
+    
+    
+    </tr></table></div><style>td:first-child { white-space: nowrap;font-weight: bold;}</style>
+
+    
+
+    <div class='alert alert-success'><h4>Example 2</h4></div>
+    <div class='section-content'><table style='border-collapse: collapse; width: 100%;'>
+        
+        
+        
+        <tr><td style='border: 1px solid black; font-size: 16px; font-weight: normal; width: auto;'>Hypothesis Text</td><td style='border: 1px solid black; font-size: 16px; font-weight: bold;'>"Increase Students' understanding of mathematics learning using the technology-based  learning. </td></tr><tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'> Label</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>AutomaticAnnotation2</td></tr>
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Analysis Goal Type</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Relation-finding</td>
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Independent Variable</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Technology-Based Learning</td>
+        
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Relation</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>increases</td>
+    <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Dependent Variable</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Students' understanding of mathematics learning</td>
+       
+        
+        
+        
+        
+        
