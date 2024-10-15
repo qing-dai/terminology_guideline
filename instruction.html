@@ -13,7 +13,7 @@
     <div class='flex-container'><h4 class='section-heading alert alert-info'><b>Overview:</b></h4><div class='section-content' style='font-size: 18px; font-weight: normal;'>During this study, you will be asked to read a scientific paper, and evaluate the hypotheses and their components automatically extracted by AI. <br><br>To evaluate whether the sentence can be classified as a hypothesis or not, consider the following definition:<em> A hypothesis is a testable explanation or prediction for an observed phenomenon that can be supported or refuted through experimentation.</em><br>
 
     
-        <br>In the following sections, you will be presented with more detailed instructions on the task, and some examples to illustrate the methodology to be followed in the task.</div></div>
+        <br>In the following sections, you will be presented with more detailed instructions on the task, and some examples to illustrate the terminology to be followed in the task.</div></div>
 
     <div class='flex-container'><div class='section-title alert alert-info' style='font-size: 20px; font-weight: bold;'>Tool Instructions:</div><div class='section-content' style='font-size: 16px; font-weight: normal;'><ul>
         <li> You can use the upvote or downvote to approve or disapprove the automatic annotations.</li>
@@ -26,7 +26,21 @@
 
 
     <div class='section-title alert alert-info' style='font-size: 20px; font-weight: bold;'>Terminology</div><div class='section-content' style='font-size: 16px; font-weight: normal;'><ol style='padding-bottom: 10px;'>
+        <h5>Screenshots of the two types of annotations</h5>
+<div style="overflow: hidden">
+    <img src="relation.png" alt="Annotated hypothesis example 1" style="float: left; max-width: 300px; width: 48%; margin-right: 2%; height: auto;">
+    <img src="comparative.png" alt="Comparative example" style="float: left; max-width: 300px; width: 48%; margin-right: 2%; height: auto;">
+</div>
         <li><b>Label:</b> A description of the annotation.</li>
+        <li><b>Hypothesis:</b>A hypothesis is a prediction or testable explanation that researchers will verify with experiments. They can be:
+            <ul style='margin-bottom: 10px;'><li><b>Explicitly stated:</b>
+             A sentence that is directly stated by the authors with phrases such as 'we hypothesize', 'we expect', 'our hypothesis is' can be a scientific hypothesis. E.g., \"We hypothesize that the administration of a certain medication will result in a decrease in blood pressure among hypertensive patients. \" However, be cautious: sometimes authors may label a statement as a hypothesis, but it does not fit our specific criteria. For instance, 'We hypothesize that exercise is good' lacks specificity and testability, even though the term 'hypothesize' is used. </li>
+             
+            <li><b>Implicitly stated: </b>An implicit hypothesis can be inferred from any text, but typically one finds them implicit in the specification of research questions, research goals, and results. E.g., “Our results suggest that positive affective computational priming positively influences the quality of ideas generated.”
+         </li> 
+            <li> <b>Note:</b> <u>For simplicity in our study, we will treat both explicit and implicit hypotheses as explicit.</u></li>
+        
+        </ul>
         <li><b>Analysis Gocal Type:</b> In this study, there are two types of analysis goal for the hypotheses. </li>
         <ul style='margin-bottom: 10px;'><li><b>Relation-finding hypotheses:</b> These hypotheses propose a <span style='background-color: #FFB6C1;'>relationship</span> between two or more <span style='background-color: #87CEFA;'>variables</span>. <br>Example: <em>We hypothesize that <span style='background-color: #87CEFA;'>increased levels of air pollution</span> are <span style='background-color: #FFB6C1;'>positively correlated</span> with the <span style='background-color: #87CEFA;'>prevalence of respiratory diseases</span> in urban areas.</em></li><li><b>Comparative hypotheses:</b> These hypotheses suggest a <span style='background-color: #FFB6C1;'>comparison</span> between two or more <span style='background-color: #FFD700;'>groups of subjects</span> in terms of a <span style='background-color: #87CEFA;'>variable</span>. <br>Example: <em>We hypothesize that <span style='background-color: #FFD700;'>students who receive personalized feedback</span> will show <span style='background-color: #FFB6C1;'>higher</span> improvement in <span style='background-color: #87CEFA;'>test scores</span> compared to those who <span style='background-color: #FFD700;'>receive generic feedback</span>.</em></li></ul>
         <p></p>
@@ -52,42 +66,60 @@
     <li><b>Left:</b></li> Left group. Group of samples or artifact with certain quality and differs from the group it will be compared with.
     <li><b>Right:</b></li> Right group. Same definition as left group.
    </ul> </ol>
-   <Strong>Note:</Strong> You will see above bold text in the interface as fields names, you can always come back to this guideline for reference.
+   <Strong>Note:</Strong> You will see above bold text in the tool interface as fields names, you can always come back to this guideline for reference.
 
    <p></p>
 
-    <h4 class='section-title alert alert-info' style='font-size: 20px; font-weight: bold;'>Examples Hypotheses, relations, and components</h4>
+    <h4 class='section-title alert alert-info' style='font-size: 20px; font-weight: bold;'>Example hypotheses</h4>
 
-    Sample screenshots with reasoning on explicit/implicit hypotheses and non-hypotheses. Include context sentences. 
-    
-    <div class='hypothesis-section' style='font-size: 18px; font-weight: normal;'><div class='hypothesis-title'>Here are some examples of annotated hypotheses, relations and components for your reference:</div></div><div class='alert alert-success' style='text-align: left;'><h4>Example 1</h4></div><div class='section-content'><table style='border-collapse: collapse; width: 100%;' >
-        
-        <tr><td style='border: 1px solid black; font-size: 16px; font-weight: normal; width: auto;'>Hypothesis Text</td><td style='border: 1px solid black; font-size: 16px; font-weight: bold;'>This model is capable of producing results of a higher quality than sequence-to-sequence models even without the use of any convolution.</td></tr><tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'> Label</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>AutomaticAnnotation1</td></tr>
-        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Analysis Goal Type</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Comparative</td>
-        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Variable</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>the quality of results</td>
-        
-        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Operator</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>hasBetterValuethan</td>
-    <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Left Data</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>This model</td>
-        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Right Data</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>sequence-to-sequence models</td>
 
     
+    <div class='hypothesis-section' style='font-size: 18px; font-weight: normal;'><div class='hypothesis-title'>Here are some examples of annotated hypotheses, relations and components for your reference:</div></div>
+
+
+    <div class='alert alert-success'><h4>Example 1</h4></div>
+    <div style="overflow: hidden">
+        <img src="manual1.png" alt="Annotated hypothesis example 1" style="float: left; max-width: 400px; width: 60%; margin-right: 2%; height: auto;">
+
+    </div>
     
-    </tr></table></div><style>td:first-child { white-space: nowrap;font-weight: bold;}</style>
+    <div class='section-content'>
+        <table style='border-collapse: collapse; width: 100%;' >
+    
+
+          
+        
+        <tr><td style='border: 1px solid black; font-size: 16px; font-weight: normal; width: auto;'>Hypothesis Text</td><td style='border: 1px solid black; font-size: 16px; font-weight: bold;'>This studys hypothesis is that considerably restricting players field of view in a well understood game genre of survival shooters will lead to higher disorientation.</td></tr><tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'> Excerpt </td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>It has been called as an experience of deep involvement in a game, during which players forget about their everyday concerns, lose track of time and become less aware of their real world surroundings [12] . Jennett et al. [12] have produced an extensively validated questionnaire which measures total immersion.  being a big part of PX, makes an interesting first viewpoint from where uncertainty's relationship with PX can be looked at. <span style="background-color: #ffffe0; padding: 2px 5px; border-radius: 4px;"> This study's hypothesis is that considerably <span style="background-color: #87CEFA;">restricting player's field of view in a well understood game genre of survival shooters</span> will <span style="background-color: #FFB6C1;"> lead to</span> higher <span style="background-color: #87CEFA;">disorientation</span>. </span> should considerably overlap with randomness in the chosen circumstances.  and exploration should remain more or less the same due to the clarity of mechanics and goals in the genre. The intention of finding uncertainty's relation with immersion is rather exploratory however from the above literature, immersion should not be negatively impacted by high uncertainty.  This is a single experiment with a two step inference process where step 1 aims to determine the change in uncertainty by restricting game visibility whereas step 2 aims to explore the relationship between uncertainty and player immersion. It is a between participants experiment where players were asked to play a game, with one group having clear visibility and the other group with restricted visibility of the game.</td></tr>
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Reason</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>The statement is explicitly stated as a hypothesis, specifically of a relation-finding type, by proposing contributesTo relation between "restricted player's field of view in a well understood game genre of survival shooters" and "disorientation".</td>
+       
+    </table>
+</div>
+
+<style>td:first-child { white-space: nowrap;font-weight: bold;}</style>
 
     
 
     <div class='alert alert-success'><h4>Example 2</h4></div>
+
+    <div style="overflow: hidden">
+        <img src="manual2.png" alt="Comparative example" style="float: left; max-width: 400px; width: 60%; margin-right: 2%; height: auto;">
+    </div>
     <div class='section-content'><table style='border-collapse: collapse; width: 100%;'>
+        <tr><td style='border: 1px solid black; font-size: 16px; font-weight: normal; width: auto;'>Hypothesis Text</td><td style='border: 1px solid black; font-size: 16px; font-weight: bold;'> There was no significant difference (see Figure 6) found in total immersion with or without uncertainty confirmed by a t-test (t = -0.51, df = 29, p-value = n.s.) </td></tr><tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'> Excerpt</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'> In step 2, the relationship of uncertainty and immersion was studied. This was done by seeing the change between total immersion in the experimental condition (with restricted visibility) versus the control condition(with clear visibility). This was more exploratory in nature, however from the literature it was hoped that immersion should not be negatively impacted by the increased disorientation and randomness.  <span style="background-color: #ffffe0; padding: 2px 5px; border-radius: 4px;">There was<span style="background-color: #FFB6C1;"> no significant difference</span> (see Figure 6 ) found in  <span style="background-color: #87CEFA;">total immersion</span> <span style="background-color: #FFD700;"> with </span> or <span style="background-color: #FFD700;">without</span> uncertainty confirmed by a t-test (t = -0.51, df = 29, p = n.s.). </span> For uncertainty, the results support the hypothesis. disorientation and randomness was predicted in the chosen experiment thus randomness also significantly increases. This is quite a positive outcome, especially given that the chosen players were familiar with shooter games. A number of the players enjoyed the challenge of the game, with one saying "yeah, very small view field but still fun" and another giving a suggestion for the limited field view version -"personally, this one could be a mini-game". This, along with self-reports, tends to indicate familiarity with this type of game and knowledge of how to play.</td></tr>
+        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Reason</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>The statement, while not explicitly labeled as such, structurally presents itself as a hypothesis. Specifically, it suggests a comparative type, given no significant difference between with and without uncertantity in terms of total immersion.</td>
         
-        
-        
-        <tr><td style='border: 1px solid black; font-size: 16px; font-weight: normal; width: auto;'>Hypothesis Text</td><td style='border: 1px solid black; font-size: 16px; font-weight: bold;'>"Increase Students' understanding of mathematics learning using the technology-based  learning. </td></tr><tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'> Label</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>AutomaticAnnotation2</td></tr>
-        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Analysis Goal Type</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Relation-finding</td>
-        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Independent Variable</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Technology-Based Learning</td>
-        
-        <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Relation</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>increases</td>
-    <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Dependent Variable</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Students' understanding of mathematics learning</td>
-       
+        </tr></table></div>
+
+        <h4 class="section-title alert alert-info" style="font-size: 20px; font-weight: bold;">Example non-hypothesis</h4>
+        <div class="hypothesis-title">Here is one example of non-hypotheses for your reference:</div>
+        <div style="overflow: hidden">
+            <img src="manual3.png" alt="Comparative example" style="float: left; max-width: 400px; width: 60%; margin-right: 2%; height: auto;">
+        </div>
+        <div class='section-content'><table style='border-collapse: collapse; width: 100%;'>
+            <tr><td style='border: 1px solid black; font-size: 16px; font-weight: normal; width: auto;'>Hypothesis Text</td><td style='border: 1px solid black; font-size: 16px; font-weight: bold;'>It specifically tests the hypothesis that multilingual Twitter users serve as bridges between different clusters in the network </td></tr><tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'> Excerpt</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'> First, it focuses on the emergent network of message sharing activity. This network is formed by Twitter users mentioning other users by username, replying to tweets, and retweeting (resending/ forwarding) tweets. This higher bar for a network tie captures the dynamic, interaction patterns rather than the more static, following network on the platform. Consistent with previous work and corresponding with the low overlap in hashtag/ link domains, it is predicted that the mentions/retweet network will have many clusters composed of a single, dominant language (H1). Second, this paper examines the bridging role of multilingual users at a full network level rather than an ego-net level.  <span style="background-color: #ffffe0; padding: 2px 5px; border-radius: 4px;">It specifically tests the hypothesis that multilingual Twitter users serve as bridges between different clusters in the network (H2). </span> If language does structure the network but multilingual users serve as bridges between languages as predicted, then it would be useful to know the distribution of multilinguals and how they connect users across languages when designing search and friend recommendation approaches. Strongly connected languages are likely good languages to draw additional results from for search or friend recommendations when insufficient results are available in the preferred language(s) of the user. In what languages are users more likely to cross language divides?</td></tr>
+            <tr><td style='border: 1px solid black; background-color: #e8e8e8; font-size: 16px; font-weight: normal; width: auto;'>Reason</td><td style='border: 1px solid black; font-size: 16px; font-weight: normal;'>Based on the authors' context, this can be viewed as a hypothesis. However, it come across as a decalarative statement about multilingual Twitter users. Within the boundaries of the given excerpt, it is challenging to perceive the specific structure of the hypothesis. Particularly, we are unable to pinpoint the clear variables or relationships or groups involved. Therefore, in accordance with our interested type of hypotheses, this does not clearly qualify as a hypothesis leading to a false negative situation.</td>
+            
+            </tr></table></div>
         
         
         
